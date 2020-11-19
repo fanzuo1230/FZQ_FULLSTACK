@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Flower{
+
+        }
+        //json object
+        const fzq={
+            name:'范志强',
+            age:20,
+            hometown:'上饶',
+            isSingle:false,
+            girlfriend:'小仙女',
+            house: null,
+            //函数对象
+            //gf 参数 形参 类型是对象JSON Object
+            sendFlower:function(gf){
+                const flowers = new Flower(11);
+                gf.receiveFlower(flowers,this);
+            }
+        }
+
+       // 饶煊  瑞金  20  false
+
+        const rx={  //对象 Object
+            name:'饶煊小公举',//字符串
+            hobbies:['打游戏','唱歌'],//数组  Array   JS里没有独立的数组对象，
+            //Array Object
+            age:20,     //数值  类型  Number
+            hometown:'瑞金',
+            isSingle:false,    //Boolean
+            girlfriend:undefined,  //未定义  概念都 没有分配空间
+            house:null,       // 为空
+            fell:50,
+            receiveFlower:function(flower,sender){
+                //fell<80  拒绝
+                //去逛街
+                console.log(this.name +'收到了' +sender.name+ '的花')
+            }
+            
+        }
+
+        const cw={
+            name:'炜炜',
+            receiveFlower:function(flower,sender){
+                if(sender.name=='范志强'){ 
+                    //心情好、心情坏
+                    //定时器
+                    setTimeout(function(){
+                        rx.fell=100;
+                        console.log(cw.name+'已经把花送给了'+rx.name)
+                    rx.receiveFlower(flower,sender)
+                    },2000)
+                }
+                else{
+                    console.log(this.name +'还是我们在一起吧!')
+                }
+
+            }
+        }
+
+
+    </script>
+</body>
+</html>
