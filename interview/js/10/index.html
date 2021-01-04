@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         const fn =function(b = 1)//可以赋初值
+//         {
+//             // console.log(arguments.length,b,arguments[0],arguments[1],arguments[2]);
+// //arguments 是一个对应于传递给函数的参数的类数组对象。
+// // arguments对象不是一个 Array 。它类似于Array，但除了length属性和索引元素之外没有任何Array属性。
+//             console.log(typeof b);
+//         }
+//         //js 函数传参也不严格
+//         fn(1,2,3);
+        const fn=(...args)=>{
+            // console.log(typeof b)
+            console.log(args);
+        }
+        fn(1,2,3);
+    </script>
+</body>
+</html>
