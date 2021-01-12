@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- maximum-scale=1, user-scalable=no  设置屏幕不能缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0，
+    maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        设备device像素指物理像素，
+        viewport 视窗 是移动端才有 pc端没有
+        在 PC时代， 页面比较大，基于 img 等比例缩放的理解，
+        一个大pc页，要显示在小的手机里，也是可以的，缩放一下就可以啦。看不清怎么办/
+        使用移动端特有的手势pinch（
+        两根手指头
+        ）放大来看，为什么要加 user-scalable=no
+        maximum-scale=1, 
+        现在已进入全面移动时代，
+        viewport 放大会使页面不稳定
+        pc站都有相应的手机网站，所以没有了上面的需求
+
+        前端为什么那么吃香的原因？ 
+        前端要做  pc| mobile | 小程序 | app
+        www.taobao.com 手机端 -》请求服务器http协议-》 设备是手机返回
+        移动官网-》main.m.taobao.com
+        服务器HTTP 返回一个302状态码， 
+    </p>
+</body>
+</html>
